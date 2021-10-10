@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #151515;
+  color: #ffffff;
+  font-family: "Lato", sans-serif !important;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 24px 10vw;
+  margin: 0;
+}
+
+.header img {
+  min-height: 100px;
+  height: 120%;
+}
+
+.search {
+  margin: 20px auto;
+  width: 450px;
+  text-align: left;
+  font-family: "Lato", sans-serif !important;
+}
+.search form {
+  margin: 0 auto;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #242424;
+  color: #ffffff;
+}
+
+.card-actions > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  max-width: 500px;
+  min-width: 450px;
+  width: 90%;
+  margin: 5px 20px;
+  word-wrap: break-word;
+}
+
+.card-actions > h6 {
+  max-width: 500px;
+  width: 100%;
+  text-align: right;
+  margin: 0 20px;
+  box-sizing: border-box;
+}
+
+.card-actions h4,
+.card-actions h6 {
+  font-size: 18px !important ;
+  font-weight: 100;
+}
+
+.srch-cards {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.card-actions .roles {
+  font-size: 14px !important;
+  height: 24px;
+}
+
+.searchResults {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 25px auto;
+}
+
+@media screen and (max-width: 750px) {
+  .searchResults {
+    grid-template-columns: 1fr;
+  }
+}
